@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tian Lan | Resume Updating</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root {
+  --paper: #f7f4ed;
+  --ink: #101820;
+  --muted: #66706b;
+  --line: rgba(16, 24, 32, 0.18);
+  --red: #a62d2d;
+  --green: #748266;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background:
+    linear-gradient(rgba(16, 24, 32, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 24, 32, 0.035) 1px, transparent 1px),
+    var(--paper);
+  background-size: 52px 52px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+
+main {
+  width: min(100%, 760px);
+  padding: clamp(32px, 7vw, 72px);
+  border: 1px solid var(--line);
+  background: rgba(247, 244, 237, 0.82);
+  box-shadow: 0 22px 70px rgba(16, 24, 32, 0.08);
+}
+
+.kicker {
+  margin: 0 0 18px;
+  color: var(--red);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(3rem, 10vw, 6.5rem);
+  font-weight: 500;
+  line-height: 0.95;
+}
+
+.rule {
+  width: 100%;
+  height: 1px;
+  margin: 34px 0;
+  background: var(--line);
+}
+
+p {
+  max-width: 620px;
+  margin: 0 0 18px;
+  font-size: clamp(1.05rem, 2.5vw, 1.28rem);
+  line-height: 1.65;
+}
+
+.zh {
+  color: var(--muted);
+  font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: clamp(0.98rem, 2.3vw, 1.16rem);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  margin-top: 34px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: #0c2848;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+.stamp {
+  display: inline-block;
+  margin-top: 42px;
+  padding: 9px 14px;
+  border: 1px solid rgba(116, 130, 102, 0.5);
+  color: var(--green);
+  font-family: "Courier New", monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+}
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">Resume Update</p>
+  <h1>Resume is being updated.</h1>
+  <div class="rule" aria-hidden="true"></div>
+  <p>
+    This page is temporarily offline while I refresh the content and format.
+    The updated version will be back here soon.
+  </p>
+  <p class="zh">
+    这个页面正在更新中，暂时先下线。新的 resume 整理好之后会重新放回这里。
+  </p>
+  <div class="actions">
+    <a href="/">Back to skylan.dev</a>
+    <a href="mailto:skylan.dev@outlook.com">Contact me</a>
+  </div>
+  <span class="stamp">In progress</span>
+</main>
+</body>
+</html>
